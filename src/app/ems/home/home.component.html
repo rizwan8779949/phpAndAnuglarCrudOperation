@@ -1,0 +1,31 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Position</td>
+      <td>Department</td>
+      <td width=275 align="center">Action</td>
+    </tr>
+  </thead>
+  <tbody>
+     <!-- <tr *ngFor="let data of employees;let index=i"> -->
+       <!-- <tr *ngFor="let data of employees"> -->
+         <tr>
+        <td>{{employees.name}}</td>
+        <td>{{employees.position}}</td>
+        <td>{{employees.department}}</td>
+        <!-- <td width=275> 
+            <a class="btn btn-info" routerLink="/show/{{employee._id}}">Detail</a> 
+            <a class="btn btn-success" routerLink="/edit/{{employee._id}}">Edit</a>
+            <a class="btn btn-danger" (click)="deleteEmployee(employee._id)">Delete</a>
+        </td> -->
+        <td width=275> 
+            <a class="btn btn-info" routerLink="/show/{{employees._id}}">Detail</a> 
+            <a class="btn btn-success" routerLink="/edit/{{employees._id}}">Edit</a>
+            <a class="btn btn-danger" (click)="deleteEmployee(employees._id)">Delete</a>
+        </td>
+     </tr>
+    
+  </tbody>
+ 
+</table>
